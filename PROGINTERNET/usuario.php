@@ -1,9 +1,22 @@
 <?php
 session_start();
-     $i = 0;
+    $_SESSION['usuario'] = "";
+     /*$i = 0;
      foreach($_SESSION['itens'] as $item){
             echo $i . $item['desc'] . " - " . $item['vl'] . "<br>";
             $i++;
+        }*/
+        
+        if(isset($_POST['logar'])){
+            if(isset($_POST['usuario']) && isset($_POST['nome']) && isset($_POST['endereco'])){
+                $_SESSION['usuario'] = array(
+                        'usuario' => $_POST['usuario'],
+                        'nome' => $_POST['nome'],
+                        'endereco' => $_POST['endereco']
+                );
+
+                header('Location: dadospag.php', true, 303);
+            }
         }
 ?>
 
@@ -60,17 +73,23 @@ session_start();
             
         ?>
       <tr>
-        <td>1</td>
-        <td><input type="checkbox" name="ch0"></td>
-        <td><input type ="text" name="desc0" value="Caderno 20 matérias" readonly></td> 
-        <td><input type ="number" name="qtd0" value="0" ></td>
-        <td><input type ="text" name="vl0" value="29.99" readonly></td>
+            <td><?php echo $i; ?></td>
+            <td><?php echo $item['ni']; ?></td>
+            <td><?php echo $item['desc']; ?></td> 
+            <td><?php echo $item['qtd']; ?></td>
+            <td><?php echo $item['vl']; ?></td>
       </tr>
                 
       <?php
+                        $i++;
                   }
                 }
       ?>
+     <tr>
+        <th colspan="3"></th>
+        <th>Valor Total</th>
+        <th> <?php echo $_SESSION['valortotal']; ?></th>
+    </tr>
     </table>
 </body>
 </html>
