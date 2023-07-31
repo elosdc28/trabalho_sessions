@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+$_SESSION['dadospag'] = "";
+
+$usuario = (isset($_SESSION['usuario']['usuario'])? $_SESSION['usuario']['usuario']: "");
+$nome = (isset($_SESSION['usuario']['nome'])? $_SESSION['usuario']['nome']: "");
+$endereco = (isset($_SESSION['usuario']['endereco'])? $_SESSION['usuario']['endereco']: "");
+$valorTotal = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
+$metpag = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
+$numcartao_avista = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
+$numcartao_credito = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
