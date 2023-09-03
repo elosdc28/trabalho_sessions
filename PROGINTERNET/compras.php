@@ -55,6 +55,10 @@ if(isset($_POST["comprar"])){
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main-css.css'>
     <script src='main.js'></script>
+
+
+    <style>
+      </style>
 </head>
 <body>
     <form action="compras.php" method="post">
@@ -63,7 +67,7 @@ if(isset($_POST["comprar"])){
         <th colspan ="5">Lista de compras</th>
       </tr>
       <tr>
-        <th>a</th>
+        <th>Produtos</th>
         <th>[x]</th>
         <th>Descrição</th> 
         <th>Quantidade</th>
@@ -79,30 +83,30 @@ if(isset($_POST["comprar"])){
       <tr>
         <td>2</td>
         <td><input type="checkbox" name="ch1"></td>
-        <td><input type ="text" name="desc1" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc1" value="Caderno 10 matérias" readonly></td> 
         <td><input type ="number" name="qtd1" value="0" ></td>
-        <td><input type ="text" name="vl1" value="29.99" readonly></td>
+        <td><input type ="text" name="vl1" value="19.99" readonly></td>
       </tr>
       <tr>
         <td>3</td>
         <td><input type="checkbox" name="ch2"></td>
-        <td><input type ="text" name="desc2" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc2" value="Caderno 25 matérias" readonly></td> 
         <td><input type ="number" name="qtd2" value="0" ></td>
-        <td><input type ="text" name="vl2" value="29.99" readonly></td>
+        <td><input type ="text" name="vl2" value="34.99" readonly></td>
       </tr>
       <tr>
         <td>4</td>
         <td><input type="checkbox" name="ch3"></td>
-        <td><input type ="text" name="desc3" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc3" value="Lápis grafit" readonly></td> 
         <td><input type ="number" name="qtd3" value="0" ></td>
-        <td><input type ="text" name="vl3" value="29.99" readonly></td>
+        <td><input type ="text" name="vl3" value="1.99" readonly></td>
       </tr>
       <tr>
         <td>5</td>
         <td><input type="checkbox" name="ch4"></td>
-        <td><input type ="text" name="desc4" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc4" value="Estojo" readonly></td> 
         <td><input type ="number" name="qtd4" value="0" ></td>
-        <td><input type ="text" name="vl4" value="29.99" readonly></td>
+        <td><input type ="text" name="vl4" value="9.99" readonly></td>
       </tr>
       <tr>
         <td>6</td>
