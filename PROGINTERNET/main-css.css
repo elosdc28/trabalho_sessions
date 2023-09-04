@@ -3,24 +3,36 @@ body
 width: 80%;
 font-size: 20px;
 margin: auto;
+background: url(fundoPrincipal.png);
 }
 table
 {
     width: 100%;
-    border: 1px solid #cccccc;
+    border-radius: 35px;
+    padding-top: 195px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 table th
 {
-    background-color: #cccccc;
+    background-color: #DF8B8B;
     font-size: 25px;
+   padding: 5px;
+   border-radius: 15px;
+   color: rgb(76, 77, 77);
+  
 }
 table td
 {
     text-align: center;
 }
 input[type=submit]{
-    margin: 10px;
+    margin: 35px;
     font-size: 20px;
     font-weight: bold;
+    background-color: #DF8B8B;
+    border-radius:10px;
+    color:  rgb(76, 77, 77);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px white;
 }

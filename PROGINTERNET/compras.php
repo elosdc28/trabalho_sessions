@@ -7,7 +7,7 @@ $_SESSION['valortotal'] = 0.0;
 $valorTotal = 0.0;
 
 if(isset($_POST["comprar"])){
-    for($i = 0;$i < 8; $i++){
+    for($i = 0;$i < 16; $i++){
         if(isset($_POST['ch'.$i])){
             $c = $ni;
             $desc = $_POST['desc'.$i]; 
@@ -111,30 +111,70 @@ if(isset($_POST["comprar"])){
       <tr>
         <td>6</td>
         <td><input type="checkbox" name="ch5"></td>
-        <td><input type ="text" name="desc5" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc5" value="POST-IT" readonly></td> 
         <td><input type ="number" name="qtd5" value="0" ></td>
-        <td><input type ="text" name="vl5" value="29.99" readonly></td>
+        <td><input type ="text" name="vl5" value="4.00" readonly></td>
       </tr>
       <tr>
         <td>7</td>
         <td><input type="checkbox" name="ch6"></td>
-        <td><input type ="text" name="desc6" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc6" value="Cartolina diversas cores" readonly></td> 
         <td><input type ="number" name="qtd6" value="0" ></td>
-        <td><input type ="text" name="vl6" value="29.99" readonly></td>
+        <td><input type ="text" name="vl6" value="1.99" readonly></td>
       </tr>
       <tr>
         <td>8</td>
         <td><input type="checkbox" name="ch7"></td>
-        <td><input type ="text" name="desc7" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc7" value="Canetas bic" readonly></td> 
         <td><input type ="number" name="qtd7" value="0" ></td>
-        <td><input type ="text" name="vl7" value="29.99" readonly></td>
+        <td><input type ="text" name="vl7" value="1.99" readonly></td>
       </tr>
       <tr>
         <td>9</td>
         <td><input type="checkbox" name="ch8"></td>
-        <td><input type ="text" name="desc8" value="Caderno 20 matérias" readonly></td> 
+        <td><input type ="text" name="desc8" value="Papel crepom" readonly></td> 
         <td><input type ="number" name="qtd8" value="0" ></td>
-        <td><input type ="text" name="vl8" value="29.99" readonly></td>
+        <td><input type ="text" name="vl8" value="2.99" readonly></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><input type="checkbox" name="ch9"></td>
+        <td><input type ="text" name="desc9" value="Kit marca-texto" readonly></td> 
+        <td><input type ="number" name="qtd9" value="0" ></td>
+        <td><input type ="text" name="vl9" value="13.99" readonly></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><input type="checkbox" name="ch10"></td>
+        <td><input type ="text" name="desc10" value="Cola bastão" readonly></td> 
+        <td><input type ="number" name="qtd10" value="0" ></td>
+        <td><input type ="text" name="vl10" value="2.99" readonly></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td><input type="checkbox" name="ch11"></td>
+        <td><input type ="text" name="desc11" value="Kit escritório" readonly></td> 
+        <td><input type ="number" name="qtd11" value="0" ></td>
+        <td><input type ="text" name="vl11" value="64.99" readonly></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td><input type="checkbox" name="ch12"></td>
+        <td><input type ="text" name="desc12" value="Bloco de anotações" readonly></td> 
+        <td><input type ="number" name="qtd12" value="0" ></td>
+        <td><input type ="text" name="vl12" value="9.99" readonly></td>
+      </tr><tr>
+        <td>14</td>
+        <td><input type="checkbox" name="ch13"></td>
+        <td><input type ="text" name="desc13" value="Agenda anual" readonly></td> 
+        <td><input type ="number" name="qtd13" value="0" ></td>
+        <td><input type ="text" name="vl13" value="14.99" readonly></td>
+      </tr><tr>
+        <td>15</td>
+        <td><input type="checkbox" name="ch15"></td>
+        <td><input type ="text" name="desc15" value="Tinta guache" readonly></td> 
+        <td><input type ="number" name="qtd15" value="0" ></td>
+        <td><input type ="text" name="vl15" value="9.48" readonly></td>
       </tr>
       <td>
       <tr>

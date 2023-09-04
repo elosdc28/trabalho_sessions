@@ -32,6 +32,7 @@ $numcartao_credito = (isset($_SESSION['dadospag']['numcartao-credito'])? $_SESSI
                 <td>Usuário</td>
                 <td><?php echo $usuario; ?></td>
             </tr>
+            
             <tr>
                 <td>Nome Completo:</td>
                 <td><?php echo $nome; ?></td>
