@@ -7,9 +7,14 @@ $usuario = (isset($_SESSION['usuario']['usuario'])? $_SESSION['usuario']['usuari
 $nome = (isset($_SESSION['usuario']['nome'])? $_SESSION['usuario']['nome']: "");
 $endereco = (isset($_SESSION['usuario']['endereco'])? $_SESSION['usuario']['endereco']: "");
 $valorTotal = (isset($_SESSION['valortotal'])? $_SESSION['valortotal']: "");
-$metpag = (isset($_SESSION['dadospag']['metpag'])? $_SESSION['dadospag']['metpag']: "");
-$numcartao_avista = (isset($_SESSION['dadospag']['numcartao-avista'])? $_SESSION['dadospag']['numcartao-avista']: "");
-$numcartao_credito = (isset($_SESSION['dadospag']['numcartao-credito'])? $_SESSION['dadospag']['numcartao-credito']: "");
+$metpag = (isset($_SESSION['dadospag1']['metpag1'])? $_SESSION['dadospag1']['metpag1']: "");
+$numcartao_avista = (isset($_SESSION['dadospag1']['numcartao-avista'])? $_SESSION['dadospag1']['numcartao-avista']: "");
+$numcartao_credito = (isset($_SESSION['dadospag1']['numcartao-credito'])? $_SESSION['dadospag1']['numcartao-credito']: "");
+
+
+if(isset($_POST['confirmar'])){
+    header('Location: confirmacaocompra.php', true, 303);   
+}
 
 ?>
 
@@ -115,5 +120,12 @@ $numcartao_credito = (isset($_SESSION['dadospag']['numcartao-credito'])? $_SESSI
             </td>
         </tr>
         </table>
+        <form action="resumocompra.php" method="post">
+    <table>
+        <tr>
+            <td> Confirmar Compra: </td>
+            <td> <input type ="submit" name="confirmar" value="confirmar"> </td>
+        </tr>
+            </table>
 </body>
 </html>
