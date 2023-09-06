@@ -71,7 +71,7 @@ if(isset($_POST['pagar'])){
             <td><input type="radio" name="metpag" value="deb-avista"></td>
             <td>Débito à vista </td>
             <td>Número do cartão</td>
-            <td><?php echo $item['vl']; ?></td>
+            
         </tr>
         <tr>
             <td><input type="radio" name="metpag" value="credito"></td>
@@ -83,7 +83,7 @@ if(isset($_POST['pagar'])){
             <td><input type="radio" name="metpag" value="pix"></td>
             <td>PIX</td>
             <td>Número do PIX</td>
-            <td>999999999</td>
+            <td><input type="text" name="numpix"></td>
         </tr>
         <tr>
             <th colspan="2"></th>
